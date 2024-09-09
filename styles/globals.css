@@ -1,3 +1,40 @@
+/* styles/globals.css */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  :root {
+    --background: #ffffff;
+    --foreground: #000000;
+    --primary: #000000;
+    --primary-focus: #333333;
+    --primary-content: #ffffff;
+    --secondary: #ffffff;
+    --secondary-focus: #f0f0f0;
+    --secondary-content: #000000;
+    --accent: #333333;
+    --neutral: #ffffff;
+  }
+
+  .dark {
+    --background: #000000;
+    --foreground: #ffffff;
+    --primary: #ffffff;
+    --primary-focus: #cccccc;
+    --primary-content: #000000;
+    --secondary: #000000;
+    --secondary-focus: #333333;
+    --secondary-content: #ffffff;
+    --accent: #999999;
+    --neutral: #000000;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-[var(--background)] text-[var(--foreground)] dark:bg-[var(--background)] dark:text-[var(--foreground)];
+}
