@@ -4,7 +4,7 @@ const { withPlausibleProxy } = require("next-plausible");
 const nextConfig = {
   reactStrictMode: true,
   images: {
-    domains: ["aceternity.com"], // Tambahkan domain yang diizinkan
+    domains: ["aceternity.com", "assets.aceternity.com"], // Tambahkan domain yang diizinkan
   },
 };
 

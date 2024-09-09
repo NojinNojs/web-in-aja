@@ -19,6 +19,19 @@ const config: Config = {
       },
     },
     extend: {
+      backdropFilter: {
+        none: "none",
+        blur: "blur(20px)",
+        saturate: "saturate(100%)",
+      },
+      backgroundColor: {
+        "glass-light": "rgba(255, 255, 255, 0.75)",
+        "glass-dark": "rgba(0, 4, 12, 0.75)",
+      },
+      borderColor: {
+        "glass-light": "rgba(209, 213, 219, 0.3)",
+        "glass-dark": "rgba(255, 255, 255, 0.125)",
+      },
       colors: {
         // Warna untuk light mode
         light: {

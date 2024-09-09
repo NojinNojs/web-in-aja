@@ -1,7 +1,7 @@
 // pages/index.tsx
 import Head from "next/head";
 import HeroParallax from "../components/example/hero-parallax-demo";
-import HeroHighlight from "../components/example/hero-highlight-demo";
+import Navbar from "../components/example/navbar-menu-demo";
 
 export default function Home() {
   return (
@@ -12,8 +12,8 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
+      <Navbar />
       <main>
-        <HeroHighlight />
         <HeroParallax />
       </main>
     </>
