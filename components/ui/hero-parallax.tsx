@@ -104,15 +104,25 @@ export const HeroParallax = ({
 export const Header = () => {
   return (
     <header className="relative mx-auto max-w-7xl px-4 py-20 md:py-40">
-      <h1 className="text-4xl md:text-8xl font-extrabold bg-clip-text bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 dark:bg-gradient-to-r dark:from-yellow-300 dark:via-red-500 dark:to-pink-600">
-        Pengen bikin website? <br /> Di Webin aja!
-      </h1>
-      <p className="max-w-2xl mt-8 text-base md:text-xl text-gray-700 dark:text-gray-300">
-        Kami siap membantu kamu membuat website impian dengan teknologi dan
-        framework terbaru. Tim kami terdiri dari developer dan desainer yang
-        bersemangat untuk memberikan solusi terbaik.
-      </p>
-      <div className="mt-12"></div>
+      <motion.div
+        initial={{ opacity: 0.0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{
+          delay: 0.3,
+          duration: 0.8,
+          ease: "easeInOut",
+        }}
+      >
+        <h1 className="text-4xl md:text-8xl font-extrabold bg-clip-text bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 dark:bg-gradient-to-r dark:from-yellow-300 dark:via-red-500 dark:to-pink-600">
+          Pengen bikin website? <br /> Di Webin aja!
+        </h1>
+        <p className="max-w-2xl mt-8 text-base md:text-xl text-gray-700 dark:text-gray-300">
+          Kami siap membantu kamu membuat website impian dengan teknologi dan
+          framework terbaru. Tim kami terdiri dari developer dan desainer yang
+          bersemangat untuk memberikan solusi terbaik.
+        </p>
+        <div className="mt-12"></div>
+      </motion.div>
     </header>
   );
 };
