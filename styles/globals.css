@@ -48,6 +48,10 @@
     border: 1px solid rgba(255, 255, 255, 0.125);
   }
 
+  .rounded-lg {
+    border-radius: 0.5rem; /* 8px */
+  }
+
   html {
     scroll-behavior: smooth;
   }
